@@ -11,7 +11,7 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
+<body class="bg-light d-flex flex-column min-vh-100">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
@@ -40,100 +40,101 @@
                             <li><a class="dropdown-item text-danger" href="index.html">Cerrar Sesión</a></li>
                         </ul>
                     </li>
-                    </ul>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container my-5">
-        <div class="row">
+    <main>
+        <div class="container my-5">
+            <div class="row">
 
-            <div class="col-md-3">
-                <div class="card shadow-sm border-0 rounded-3">
-                    <div class="list-group list-group-flush">
-                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                            <i class="bi bi-person-fill me-2"></i>Mi Perfil
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <i class="bi bi-box-seam me-2"></i>Mis Pedidos
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <i class="bi bi-geo-alt me-2"></i>Direcciones
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <i class="bi bi-key me-2"></i>Cambiar Contraseña
-                        </a>
-                        <a href="index.html" class="list-group-item list-group-item-action text-danger">
-                            <i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-9 mt-4 mt-md-0">
-                <div class="card shadow-sm border-0 rounded-3">
-                    <div class="card-body p-4">
-                        <h4 class="mb-4">Información de la Cuenta</h4>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-12 mb-3">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="fullName" value="Juan Pérez" required>
-                                        <label for="fullName">Nombre Completo</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 mb-3">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" value="juan.perez@email.com" required>
-                                        <label for="email">Correo Electrónico</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary fw-bold">Guardar Cambios</button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="card shadow-sm border-0 rounded-3 mt-4">
-                    <div class="card-body p-4">
-                        <h4 class="mb-4">Historial de Pedidos</h4>
-                        <div class="table-responsive">
-                            <table class="table table-hover align-middle">
-                                <thead>
-                                    <tr>
-                                        <th>N° Pedido</th>
-                                        <th>Fecha</th>
-                                        <th>Total</th>
-                                        <th>Estado</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>#5001</td>
-                                        <td>2025-11-08</td>
-                                        <td>$48.980</td>
-                                        <td><span class="badge bg-warning text-dark">Procesando</span></td>
-                                        <td><a href="#" class="btn btn-sm btn-outline-secondary">Ver Detalle</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>#4992</td>
-                                        <td>2025-10-20</td>
-                                        <td>$39.990</td>
-                                        <td><span class="badge bg-success">Entregado</span></td>
-                                        <td><a href="#" class="btn btn-sm btn-outline-secondary">Ver Detalle</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <div class="col-md-3">
+                    <div class="card shadow-sm border-0 rounded-3">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                <i class="bi bi-person-fill me-2"></i>Mi Perfil
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="bi bi-box-seam me-2"></i>Mis Pedidos
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="bi bi-geo-alt me-2"></i>Direcciones
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="bi bi-key me-2"></i>Cambiar Contraseña
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action text-danger">
+                                <i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-9 mt-4 mt-md-0">
+                    <div class="card shadow-sm border-0 rounded-3">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Información de la Cuenta</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="fullName" value="Juan Pérez" required>
+                                            <label for="fullName">Nombre Completo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" value="juan.perez@email.com" required>
+                                            <label for="email">Correo Electrónico</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary fw-bold">Guardar Cambios</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-sm border-0 rounded-3 mt-4">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Historial de Pedidos</h4>
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>N° Pedido</th>
+                                            <th>Fecha</th>
+                                            <th>Total</th>
+                                            <th>Estado</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#5001</td>
+                                            <td>2025-11-08</td>
+                                            <td>$48.980</td>
+                                            <td><span class="badge bg-warning text-dark">Procesando</span></td>
+                                            <td><a href="#" class="btn btn-sm btn-outline-secondary">Ver Detalle</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#4992</td>
+                                            <td>2025-10-20</td>
+                                            <td>$39.990</td>
+                                            <td><span class="badge bg-success">Entregado</span></td>
+                                            <td><a href="#" class="btn btn-sm btn-outline-secondary">Ver Detalle</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
         </div>
-    </div>
-
-    <footer class="bg-dark text-white py-4 mt-5">
+    </main>
+    <footer class="bg-dark text-white py-4 mt-auto">
         <div class="container text-center">
             <p class="mb-0">&copy; 2025 La Talla Perfecta. Todos los derechos reservados.</p>
         </div>
