@@ -1,0 +1,122 @@
+/* --- 1. IMPORTACIÓN DE FUENTE --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* --- 2. DEFINICIÓN DE LA PALETA DE COLORES (Variables de Bootstrap) --- */
+:root {
+    /* Color Primario: Naranja "Futurista" (Naranja-Rojo) */
+    --bs-primary: #FF4500; 
+    --bs-primary-rgb: 255, 69, 0;
+
+    /* Colores de Texto (Se mantienen) */
+    --bs-dark: #1e293b;         /* Para títulos (Slate 900) */
+    --bs-body-color: #475569;   /* Para texto normal (Slate 600) */
+
+    /* Colores de Fondo (Se mantienen) */
+    --bs-light: #f8f9fa;        /* Fondo claro (casi blanco) */
+    --bs-white: #ffffff;
+    
+    /* Fuente Principal */
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+/* --- 3. ESTILOS GLOBALES --- */
+body {
+    font-family: var(--bs-body-font-family);
+    color: var(--bs-body-color);
+    background-color: var(--bs-light) !important;
+}
+
+/* Títulos y Encabezados */
+h1, h2, h3, h4, h5, h6, .fw-bold {
+    color: var(--bs-dark);
+}
+
+/* --- 4. ESTILOS DE COMPONENTES (Botones) --- */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: var(--bs-white); 
+}
+
+.btn-primary:hover {
+    background-color: #E63E00; /* Un tono de naranja más oscuro */
+    border-color: #CC3300;
+    color: var(--bs-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.btn-outline-primary {
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+    font-weight: 500;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+/* Links */
+a {
+    color: var(--bs-primary);
+}
+a:hover {
+    color: #E63E00; /* Naranja más oscuro para hover de links */
+}
+
+/* --- 5. ESTILOS DE PÁGINAS (Login, Producto, Index) --- */
+
+/* Estilos de Tarjetas (Usadas en Index y Login) */
+.card {
+    border: none;
+    border-radius: 0.75rem;
+}
+
+/* Estilos Específicos de Producto.html */
+.product-image-main {
+    max-height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+/* El texto del precio en la página de producto también usará el color primario */
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+
+/* Estilos Específicos de Index.html (Carrusel) */
+.carousel-item {
+    height: 60vh;
+    min-height: 300px;
+    background-color: #777;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Estilos Específicos de Index.html (Categorías) */
+.category-card {
+    transition: all 0.3s ease;
+    border-radius: 0.75rem;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.category-card .card-img-top {
+    object-fit: cover;
+    height: 200px;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}

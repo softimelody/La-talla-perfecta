@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - La Talla Perfecta</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Tu CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">La Talla Perfecta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hombre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mujer</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            <i class="bi bi-cart"></i> Carrito
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="bi bi-person"></i> Iniciar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. CARRUSEL DE BIENVENIDA -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"
+                style="background-image: url('https://placehold.co/1920x600/333/999?text=Nueva+Colecci%C3%B3n')">
+                <div class="carousel-caption d-none d-md-block text-shadow">
+                    <h5>Nueva Colección Invierno 2025</h5>
+                    <p>Descubre las últimas tendencias en abrigos y suéteres.</p>
+                    <a href="#" class="btn btn-primary">Ver Ahora</a>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background-image: url('https://placehold.co/1920x600/555/CCC?text=Moda+Masculina')">
+                <div class="carousel-caption d-none d-md-block text-shadow">
+                    <h5>Estilo para Hombres</h5>
+                    <p>Poleras, pantalones y todo lo que necesitas.</p>
+                    <a href="#" class="btn btn-primary">Ir a Hombres</a>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background-image: url('https://placehold.co/1920x600/777/EEE?text=Moda+Femenina')">
+                <div class="carousel-caption d-none d-md-block text-shadow">
+                    <h5>Lo último para Mujeres</h5>
+                    <p>Vestidos, faldas y calzado de temporada.</p>
+                    <a href="#" class="btn btn-primary">Ir a Mujeres</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- 3. SALUDO (Del Mockup 4) -->
+    <div class="container text-center my-5">
+        <h2 class="display-6 fw-light">Bienvenido cliente, que tenga un buen día</h2>
+    </div>
+
+    <!-- 4. SECCIÓN DE CATEGORÍAS (De Mockups 5, 8, 9) -->
+    <div class="container my-5">
+        <h3 class="text-center mb-4">Nuestras Categorías</h3>
+
+        <!-- Usamos un grid responsivo de Bootstrap -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+            <!-- Poleras -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm category-card">
+                    <img src="https://placehold.co/600x400/EFEFEF/333?text=Poleras" class="card-img-top" alt="Poleras">
+                    <div class="card-body">
+                        <h5 class="card-title">Poleras</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="#" class="btn btn-outline-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pantalones -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm category-card">
+                    <img src="https://placehold.co/600x400/EFEFEF/333?text=Pantalones" class="card-img-top"
+                        alt="Pantalones">
+                    <div class="card-body">
+                        <h5 class="card-title">Pantalones</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="#" class="btn btn-outline-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Polerones -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm category-card">
+                    <img src="https://placehold.co/600x400/EFEFEF/333?text=Polerones" class="card-img-top"
+                        alt="Polerones">
+                    <div class="card-body">
+                        <h5 class="card-title">Polerones</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="#" class="btn btn-outline-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vestidos -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm category-card">
+                    <img src="https://placehold.co/600x400/EFEFEF/333?text=Vestidos" class="card-img-top"
+                        alt="Vestidos">
+                    <div class="card-body">
+                        <h5 class="card-title">Vestidos</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="#" class="btn btn-outline-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faldas -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm category-card">
+                    <img src="https://placehold.co/600x400/EFEFEF/333?text=Faldas" class="card-img-top" alt="Faldas">
+                    <div class="card-body">
+                        <h5 class="card-title">Faldas</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="#" class="btn btn-outline-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zapatos -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm category-card">
+                    <img src="https://placehold.co/600x400/EFEFEF/333?text=Zapatos" class="card-img-top" alt="Zapatos">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatos</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="#" class="btn btn-outline-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tacones -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm category-card">
+                    <img src="https://placehold.co/600x400/EFEFEF/333?text=Tacones" class="card-img-top" alt="Tacones">
+                    <div class="card-body">
+                        <h5 class="card-title">Tacones</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="#" class="btn btn-outline-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botas -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm category-card">
+                    <img src="https://placehold.co/600x400/EFEFEF/333?text=Botas" class="card-img-top" alt="Botas">
+                    <div class="card-body">
+                        <h5 class="card-title">Botas</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="#" class="btn btn-outline-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 5. PRODUCTOS DESTACADOS (Opcional, pero recomendado) -->
+    <div class="container my-5">
+        <h3 class="text-center mb-4">Productos Destacados</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- Producto 1 (El suéter de tu mockup) -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.imgur.com/example-sweater.jpg" class="card-img-top" alt="Suéter Clásico">
+                    <div class="card-body">
+                        <h5 class="card-title">Suéter Clásico "Otoño Cálido"</h5>
+                        <p class="card-text text-primary fw-bold">$45.990</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="producto.html" class="btn btn-primary w-100">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x700/DDD/333?text=Jean+Casual" class="card-img-top"
+                        alt="Jean Casual">
+                    <div class="card-body">
+                        <h5 class="card-title">Jean Casual "Urbano"</h5>
+                        <p class="card-text text-primary fw-bold">$39.990</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="producto.html" class="btn btn-primary w-100">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x700/CCC/333?text=Zapato+de+Vestir" class="card-img-top"
+                        alt="Zapato de Vestir">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapato de Vestir "Elegante"</h5>
+                        <p class="card-text text-primary fw-bold">$54.990</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="producto.html" class="btn btn-primary w-100">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 La Talla Perfecta. Todos los derechos reservados.</p>
+            <p class="mb-0">
+                <a href="#" class="text-white text-decoration-none">Nosotros</a> |
+                <a href="#" class="text-white text-decoration-none">Contacto</a> |
+                <a href="#" class="text-white text-decoration-none">Términos y Condiciones</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
